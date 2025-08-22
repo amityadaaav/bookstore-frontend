@@ -16,7 +16,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log(email, password);
+    //console.log(email, password);
     try {
       const res = await axios.post('https://bookstore-backend-y2rz.onrender.com/api/v1/signin', {
         email,
