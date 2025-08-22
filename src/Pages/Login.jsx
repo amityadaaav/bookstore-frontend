@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault()
     console.log(email, password);
     try {
-      const res = await axios.post('hhttps://bookstore-backend-y2rz.onrender.com/api/v1/signin', {
+      const res = await axios.post('https://bookstore-backend-y2rz.onrender.com/api/v1/signin', {
         email,
         password,
       });
