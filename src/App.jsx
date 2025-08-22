@@ -8,7 +8,6 @@ import Login from './Pages/Login'
 import SignUp from './Pages/SignUp'
 import Profile from './Pages/Profile'
 import Cart from './Pages/Cart'
-import Viewbookdetails from './Pages/viewbookDetails'
 import { useDispatch, useSelector } from 'react-redux'
 import { authActions } from './Store/auth'
 import Favourites from './component/Profile/Favourites'
@@ -17,6 +16,7 @@ import Setting from './component/Profile/Setting'
 import Allorders from './Pages/Allorders'
 import Addbook from './Pages/Addbook'
 import Updatebook from './Pages/Updatebook'
+import Viewbookdetails from './Pages/Viewbookdetails'
 
 
 const App = () => {
