@@ -10,7 +10,7 @@ const Setting = () => {
                 if (!token) throw new Error("Token not found");
 
                 const response = await axios.get(
-                  "http://localhost:5000/api/v1/getuserdetail",
+                  "https://bookstore-backend-y2rz.onrender.com/api/v1/getuserdetail",
                   {
                     headers: { Authorization: `Bearer ${token}` }
                   }
@@ -34,7 +34,7 @@ const Setting = () => {
   const handleUpdate =async () => {
     try {
     const response = await axios.put(
-      "http://localhost:5000/api/v1/updateUserDetails",
+      "https://bookstore-backend-y2rz.onrender.com/api/v1/updateUserDetails",
       { address: userData.address, mobile: userData.mobile },
       {
         headers: {

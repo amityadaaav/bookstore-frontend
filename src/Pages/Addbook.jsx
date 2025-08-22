@@ -19,7 +19,7 @@ const AddBook = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/v1/addbook", // backend endpoint
+        "https://bookstore-backend-y2rz.onrender.com/api/v1/addbook", // backend endpoint
         bookData,
         {
           headers: {

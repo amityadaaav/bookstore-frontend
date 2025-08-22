@@ -13,7 +13,7 @@ const Cart = () => {
   const handleRemove = async (bookid) => {
     try {
       const response = await axios.put(
-        "http://localhost:5000/api/v1/deleteBookcart",
+        "https://bookstore-backend-y2rz.onrender.com/api/v1/deleteBookcart",
         { id, bookid },
         { headers: { authorization: `Bearer ${localStorage.getItem("token")}` } }
       )
@@ -28,7 +28,7 @@ const Cart = () => {
   const handlePlaceOrder = async () => {
     try {
       await axios.post(
-        `http://localhost:5000/api/v1/orderPlace/${id}`,
+        `https://bookstore-backend-y2rz.onrender.com/api/v1/orderPlace/${id}`,
         { order: cartdata },
         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
       )
@@ -45,7 +45,7 @@ const Cart = () => {
     const fetchCart = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/getBookcart",
+          "https://bookstore-backend-y2rz.onrender.com/api/v1/getBookcart",
           {
             params: { id },
             headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }

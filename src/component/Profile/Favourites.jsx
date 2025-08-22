@@ -10,7 +10,7 @@ const Favourites = () => {
     const fetchFavorites = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/getBookFavoraties",
+          "https://bookstore-backend-y2rz.onrender.com/api/v1/getBookFavoraties",
           {
             params: { id }, // send id as query param
             headers: {

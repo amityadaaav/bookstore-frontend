@@ -19,7 +19,7 @@ const Updatebook = () => {
     const fetchBook = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/v1/getidBook/${id}`,
+          `https://bookstore-backend-y2rz.onrender.com/api/v1/getidBook/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -45,7 +45,7 @@ const Updatebook = () => {
   e.preventDefault();
   try {
     const response = await axios.put(
-      `http://localhost:5000/api/v1/updateBook/${id}`,
+      `https://bookstore-backend-y2rz.onrender.com/api/v1/updateBook/${id}`,
       bookData,
       {
         headers: {

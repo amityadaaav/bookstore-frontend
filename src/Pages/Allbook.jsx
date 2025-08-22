@@ -8,7 +8,7 @@ const Allbook = () => {
   useEffect(() => {
     const fetch = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/v1/getBook")
+        const response = await axios.get("https://bookstore-backend-y2rz.onrender.com/api/v1/getBook")
         setData(response.data.data)
       } catch (error) {
         console.log("cant fetch data")

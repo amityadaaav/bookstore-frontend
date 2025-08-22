@@ -8,7 +8,7 @@ const RecentAdded = () => {
   useEffect(() => {
     const fetch = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/v1/getBook4")
+        const response = await axios.get("https://bookstore-backend-y2rz.onrender.com/api/v1/getBook4")
         setData(response.data.data)
       } catch (error) {
         console.log("❌ Can't fetch data")

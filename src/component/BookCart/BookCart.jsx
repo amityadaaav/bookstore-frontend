@@ -9,7 +9,7 @@ const BookCart = ({ data,Favourites,onRemove }) => {
 const handleRemoveFavouraties = async () => {
      try {
                 const response = await axios.put(
-                  "http://localhost:5000/api/v1/deleteBookFavoraties",
+                  "https://bookstore-backend-y2rz.onrender.com/api/v1/deleteBookFavoraties",
                   { 
                     id: localStorage.getItem("id"), 
                     bookid: data._id

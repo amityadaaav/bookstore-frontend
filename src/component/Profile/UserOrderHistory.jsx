@@ -9,7 +9,7 @@ const UserOrderHistory = () => {
     const fetchHistory = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/getOrderHistory",
+          "https://bookstore-backend-y2rz.onrender.com/api/v1/getOrderHistory",
           {
              params: { id },// send id as query param
             headers: {

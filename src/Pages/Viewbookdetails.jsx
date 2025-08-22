@@ -20,7 +20,7 @@ const Viewbookdetails = () => {
     useEffect(() => {
             const fetch = async () => {
               try {
-                const response = await axios.get(`http://localhost:5000/api/v1/getidBook/${id}`)
+                const response = await axios.get(`https://bookstore-backend-y2rz.onrender.com/api/v1/getidBook/${id}`)
                 console.log(response)
                 setData(response.data.data)
               } catch (error) {
@@ -37,7 +37,7 @@ const Viewbookdetails = () => {
           const handleFavourite = async () => {  
               try {
                 const response = await axios.put(
-                  "http://localhost:5000/api/v1/addBookFavoraties",
+                  "https://bookstore-backend-y2rz.onrender.com/api/v1/addBookFavoraties",
                   { 
                     id: localStorage.getItem("id"), 
                     bookid: id // <-- the book id you want to add
@@ -57,7 +57,7 @@ const Viewbookdetails = () => {
             const handleCart = async () => {  
                 try {
                   const response = await axios.put(
-                    "http://localhost:5000/api/v1/addBookcart",
+                    "https://bookstore-backend-y2rz.onrender.com/api/v1/addBookcart",
                     { 
                       id: localStorage.getItem("id"), 
                       bookid: id
@@ -72,19 +72,10 @@ const Viewbookdetails = () => {
                 }
               }
 
-          // const handleEdit=async()=>{ 
-          //       try {
-          //               const response = await axios.get("http://localhost:5000/api/v1/addBookcart",{},{headers})
-          //               alert(response.data.message)
-
-          //             } catch (error) {
-          //               console.log(" could not added in fav") 
-          //             }
-          // }
           const handleDelete=async(bookId)=>{ 
                 try {
                     const response = await axios.delete(
-                      `http://localhost:5000/api/v1/deleteBook/${bookId}`, // pass book id in URL
+                      `https://bookstore-backend-y2rz.onrender.com/api/v1/deleteBook/${bookId}`, // pass book id in URL
                       {
                         headers: {
                           Authorization: `Bearer ${localStorage.getItem("token")}`,

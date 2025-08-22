@@ -12,7 +12,7 @@ const Allorders = () => {
       try {
         const token = localStorage.getItem("token");
         const { data } = await axios.get(
-          "http://localhost:5000/api/v1/getAllOrders",
+          "https://bookstore-backend-y2rz.onrender.com/api/v1/getAllOrders",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -32,7 +32,7 @@ const Allorders = () => {
       const newStatus = selectedStatus[orderId];
 
       await axios.patch(
-        `http://localhost:5000/api/v1/updateOrderbyAdmin/${orderId}`,
+        `https://bookstore-backend-y2rz.onrender.com/api/v1/updateOrderbyAdmin/${orderId}`,
         { status: newStatus },
         {
           headers: { Authorization: `Bearer ${token}` },

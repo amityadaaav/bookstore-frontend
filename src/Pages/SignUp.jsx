@@ -15,7 +15,7 @@ const SignUp = () => {
     console.log(name, email, password, address, agree);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/v1/signup", {
+      const res = await axios.post("https://bookstore-backend-y2rz.onrender.com/api/v1/signup", {
         username: name,
         email,
         password,
