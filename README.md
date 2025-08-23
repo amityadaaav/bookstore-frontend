@@ -1,3 +1,26 @@
+
+# Project Name
+Book store like e-comm fullStack using MERN stack
+## Tech Stack
+- React, Node.js, Express, MongoDB
+- Tailwind CSS, Redux
+
+## Features
+- Authentication (JWT, Google OAuth)
+- Responsive UI
+- CRUD operations
+
+## Demo
+[Live Link](https://your-deployed-project-link.com)
+
+## Setup
+1. Clone repo
+2. Install dependencies
+3. Run project
+
+## Screenshots
+![App Screenshot](screenshot.png)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
