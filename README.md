@@ -11,7 +11,7 @@ Book store like e-comm fullStack using MERN stack
 - CRUD operations
 
 ## Demo
-[Live Link](https://your-deployed-project-link.com)
+[Live Link](bookstore-frontend-218p.vercel.app)
 
 ## Setup
 1. Clone repo
